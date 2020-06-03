@@ -1,0 +1,76 @@
+body>*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: url(img/72847748_780278302434794_6586910816086261760_n.jpg);
+    height: 500px,500px;
+    min-width: 913px;
+}
+.btn:hover{
+    background-color: #ce2927;
+}
+.btn{
+     background-color: #900314;
+}
+
+a{
+    color: black;
+}
+a:hover{
+    color: #ce2927;
+}
+.active>*{
+    color: #900314;
+}
+section>*{
+    background-color: #e9ecef;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px;
+
+}
+.glowne{
+    display: grid;
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr 0.5fr;
+    grid-template-areas:
+        "kup kup kup"
+        "zdj zdj reklama"
+        "opis opis reklama";
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 10px;
+}
+.zdj{
+    grid-area: zdj;
+    display: flex;
+    justify-content: center;
+}
+.kup{
+    grid-area: kup;
+    padding: 10px;
+}
+.opis{
+    grid-area: opis;
+    padding: 10px;
+}
+.reklama{
+    grid-area: reklama;
+    
+}
+.reklama>img{
+    width: 160px;
+}
+.zdjecie{
+    display: block;
+}
+input{
+    margin-left: 3px;
+}
+.opis{
+    font-size: 1.5vw;
+}

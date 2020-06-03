@@ -1,0 +1,47 @@
+
+table{
+    table-layout:fixed;
+}
+td{
+    white-space: normal !important;
+      word-wrap: break-word;
+}
+body{
+    background-image: url(img/72847748_780278302434794_6586910816086261760_n.jpg);
+    height: 500px,500px;
+    background-repeat: repeat;
+    min-width: 913px;
+}
+.glowne>*{
+    background-color: #d3d3d3;
+}
+.tabela-gora>th{
+    background-color: #900314;
+}
+.btn:hover{
+    background-color: #ce2927;
+}
+.btn{
+     background-color: #900314;
+}
+
+a{
+    color: black;
+}
+a:hover{
+    color: #ce2927;
+}
+.active>*{
+    color: #900314;
+}
+.container-flow{
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.jumbotron{
+    margin-left: 10px;
+}
+.Zakupy{
+    margin-bottom: 10px;
+}

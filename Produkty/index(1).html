@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Strona z zakupami</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styl.css" />
+<meta charset="UTF-8">
+    </head>
+    
+    <body>
+        
+            <nav class="navbar navbar-expand top">
+                <a class="navbar-brand" href="../index.html"><b>Quarantine-E-Shopping</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link" href="../index.html"><b>Strona główna</b> </a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="../Produkty/index(1).html"><b>Produkty</b></a>
+      </li>
+      <li class="nav-item">
+        <li class="nav-item">
+        <a class="nav-link" href="../Kontakt/index.html"><b>Kontakt</b> </a>
+      </li>
+        <li class="nav-item">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><b>Partnerzy</b> </a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"> </a>
+      </li>
+    </ul>
+
+</nav>
+        <div class="container-flow row">
+        <div class="col-lg-10 col-xl-10 col-md-12 glowne">
+
+            
+    
+
+    <div class="row">
+    <table class="Produkty col-12 table-striped table-hover table">
+    <tr class="tabela-gora">
+        <th>L. p</th>
+        <th>Nazwa</th>
+        <th>Producent</th>
+        <th>Kraj pochodzenia</th>
+        <th class="opis">Krótki opis</th>
+        <th>Ilość</th>
+        <th>Cena w zł</th>
+        <th>Zakup</th>
+        <th>Usuń</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        
+        
+    </table>
+    </div>
+    
+    
+    <form class="row">
+<!--        Dodawanie-->
+    <fieldset class="Dodawanie col-xl-6 col-lg-6 col col-md-6 col-sm-12">
+        <legend>Dodawanie produktu do sklepu</legend>
+        <div class="form-group">
+            <label for="1">Nazwa produktu </label>
+            <input type="text" placeholder="Pralka" id="1" name="Nazwa" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="2">Producent </label>
+            <input type="text" placeholder="Electrolux" id="2" name="Producent" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="3">Kraj pochodzenia </label>
+            <input type="text" placeholder="Niemcy" id="3" name="Kraj" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="4">Krótki opis </label>
+            <textarea type="text" placeholder="Pralka wykonana z litej stali" id="4" name="Opis" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="5">Ilość </label>
+            <input type="number" id="5" name="Ilosc" class="form-control"> 
+        </div>
+        <div class="form-group">
+            <label for="13">Cena w zł </label>
+            <input type="number" id="13" name="Cena" class="form-control"> 
+        </div>
+        <label><input type="button" value="Zatwierdź" onclick="dodawanie()" class="btn"></label>
+        </fieldset>        
+<!--        Edycja-->
+        <fieldset class="Edycja col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <legend>Edytowanie produktu</legend>
+            <label for="7">Wybierz nr. produktu który chcesz edytować</label>
+            <input  type="number" id="7" name="Edycja" class="form-control">
+            <div class="form-group">
+            <label for="8">Nazwa produktu </label>
+            <input type="text" placeholder="Pralka" id="8" name="Nazwa" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="9">Producent </label>
+            <input type="text" placeholder="Electrolux" id="9" name="Producent" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="10">Kraj pochodzenia </label>
+            <input type="text" placeholder="Niemcy" id="10" name="Kraj" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="11">Krótki opis </label>
+            <textarea type="text" placeholder="Pralka wykonana z litej stali" id="11" name="Opis" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="12">Ilość </label>
+            <input type="number" id="12" name="Ilosc" class="form-control"> 
+        </div>
+        <div class="form-group">
+            <label for="14">Cena w zł </label>
+            <input type="number" id="14" name="Cena" class="form-control"> 
+        </div>
+            <input type="button" value="Edytuj" onclick="edycja()" class="btn">
+        </fieldset>
+<!--        Edycja-->
+    </form>
+<!--        Koszyk-->
+        <div class="row">
+        <fieldset class="Zakupy col-12">
+        <legend>Lista zakupów</legend>
+            <div class="wynik"></div>
+            
+                <table class="koszyk col-12 table table-striped ">
+    <tr class="thead-light">
+        <th>Produkt</th>
+        <th>Ilość</th>
+        <th>Cena</th>
+        <th>Cena całkowita</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                    </table>
+
+            <button type="button" class="btn" onclick="kupno()">Kup</button>
+            
+        </fieldset>
+        </div>
+        </div>
+            <aside class="col-xl-2 col-lg-2 col-md-12 col-sm-12 row">
+                
+            <div class="jumbotron col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <h2 class="display-5">Kup już teraz!</h2>
+  <p class="lead">Jeśli zdecydujesz się na zakup jeszcze w tej sesji, otrzymasz 20 procentowy rabat na co drugi produkt jeśli jego cena nie przekracza 100zł za sztukę!</p>
+  <hr class="my-4">
+  <img class="img-fluid" src="img/Bez%20nazwy-2.png">
+  <p>Szczegóły w regulaminie promocji. Promocja obowiązuje do wyczerpania zapasów</p>
+  <a class="btn" href="#" role="button">Regulamin promocji</a>
+</div>
+                
+                
+            </aside>
+            </div>
+
+<footer class="page-footer font-small blue">
+
+
+  <div class="footer-copyright text-center py-3"><b>© 2020 Jakub Siębor:
+    <a href="https://www.zsti.gliwice.pl/"> www.zsti.gliwice.pl</a></b>
+  </div>
+
+
+</footer>
+
+    
+    <script>
+        var td=document.getElementsByTagName('tr');
+        var tr=document.getElementsByClassName('koszyk')[0].getElementsByTagName('tr');
+    function dodawanie(){
+        
+        var s1=document.getElementById("1").value;
+        var s2=document.getElementById("2").value;
+         var s3=document.getElementById("3").value;
+         var s4=document.getElementById("4").value;
+         var s5=document.getElementById("5").value;
+        var s6=document.getElementById("13").value;
+        
+        if(document.getElementById("1").value==0||document.getElementById("2").value==0||document.getElementById("3").value==0||document.getElementById("4").value==0||document.getElementById("5").value==0||document.getElementById("13").value==0){
+            alert("Aby poprawnie dodać produkt wypełnij wszystkie pola")
+        }else if(s5<1){
+                    alert("Ilość nie może być mniejsza niż jeden")
+                }else
+        {
+            x=0;
+            do{
+                x++;
+            }while(td[x].innerHTML!="")
+        cena=parseFloat(s6,10);
+        td[x].innerHTML="<td class='Lp'>" + x + "</td><td class='Nazwa'>" + s1 + "</td><td class='Producent'>" + s2 + "</td><td class='Kraj'>" + s3 + "</td><td class='Opis'>" + s4 + "</td><td class='Ilosc'>" + s5 + "</td><td class='Cena'>" + cena.toFixed(2) +"</td><td><button class='zakup btn ' onclick='zakup("+ x +")'>Dodaj do koszyka</td><td><button type='button' class='close' onclick='usuwanie("+ x +")' aria-label='Close'><span aria-hidden='true'>&times</span></button></td>";
+        document.getElementById("1").value="";
+        document.getElementById("2").value="";
+        document.getElementById("3").value="";
+        document.getElementById("4").value="";
+        document.getElementById("5").value="";
+        document.getElementById("13").value="";
+        }
+    }
+        
+        function usuwanie(x){
+            td[x].innerHTML="";
+            
+        }
+        function edycja(){
+            var x=document.getElementById("7").value;
+            if(td[x].innerHTML==""){
+                alert("Proszę wybrać poprawnie produkt z listy")
+            }else{
+        var s1=document.getElementById("8").value;
+        var s2=document.getElementById("9").value;
+         var s3=document.getElementById("10").value;
+         var s4=document.getElementById("11").value;
+         var s5=document.getElementById("12").value;
+        var s6=document.getElementById("14").value;
+        cena=parseFloat(s6,10);
+        if(s1!=""){
+            td[x].getElementsByClassName('Nazwa')[0].innerHTML=s1;
+        }if(s2!=""){
+            td[x].getElementsByClassName('Producent')[0].innerHTML=s2;
+        }if(s3!=""){
+            td[x].getElementsByClassName('Kraj')[0].innerHTML=s3;
+        }if(s4!=""){
+            td[x].getElementsByClassName('Opis')[0].innerHTML=s4;
+        }if(s5!=""){
+            if(s5<1){
+                    alert("Ilość nie może być mniejsza niż jeden")
+                }else{
+            td[x].getElementsByClassName('Ilosc')[0].innerHTML=s5;
+                }
+        }if(s6!=""){
+            if(s6<0){
+                    alert("Cena nie może być mniejsza niż zero")
+                }else{
+            td[x].getElementsByClassName('Cena')[0].innerHTML=cena.toFixed(2);
+                }
+        }
+            }
+        }
+     function zakup(x){
+         var stan=parseInt(td[x].getElementsByClassName('Ilosc')[0].innerHTML,10);
+         if(stan==0){
+             alert('Brak produktu w magazynie')
+         }else{
+         stan-=1;
+         td[x].getElementsByClassName('Ilosc')[0].innerHTML=stan;
+         i=0;
+         var s1=td[x].getElementsByClassName('Nazwa')[0].innerHTML;
+         var s2=td[x].getElementsByClassName('Cena')[0].innerHTML;
+         if(tr[1].innerHTML==0){
+             var ilosc=1;
+             var zmienna=parseFloat(s2,10);
+             var wynik=zmienna*ilosc;
+             tr[1].innerHTML="<td class='Produkt'>" + s1 + "</td><td class='Ilosc'>" + ilosc + "</td><td class='Cena'>" + s2 + "</td><td class='Cenacala'>" + wynik.toFixed(2) + "</td>"
+             return 0;
+         }else{
+        for(i=1;tr[i].innerHTML!="";i++){
+            if(tr[i].getElementsByClassName('Produkt')[0].innerHTML==s1){
+                var ilosc=parseInt(tr[i].getElementsByClassName('Ilosc')[0].innerHTML,10)
+                var zmienna=parseFloat(s2,10);
+                ilosc+=1;
+                var wynik=zmienna*ilosc;
+                tr[i].innerHTML="<td class='Produkt'>" + s1 + "</td><td class='Ilosc'>" + ilosc + "</td><td class='Cena'>" + s2 + "</td><td class='Cenacala'>" + wynik.toFixed(2) + "</td>"
+                return 0;
+            }
+        }
+             var ilosc=1;
+             var zmienna=parseFloat(s2,10);
+             var wynik=zmienna*ilosc;
+             tr[i].innerHTML="<td class='Produkt'>" + s1 + "</td><td class='Ilosc'>" + ilosc + "</td><td class='Cena'>" + s2 + "</td><td class='Cenacala'>" + wynik.toFixed(2) + "</td>"
+             return 0;
+         }
+         }
+         
+     }
+        function kupno(){
+            var suma=0
+            for(i=1;tr[i].innerHTML!="";i++){
+                suma+=parseFloat(tr[i].getElementsByClassName('Cenacala')[0].innerHTML,10);
+            }
+            
+            document.getElementsByClassName('wynik')[0].innerHTML='<div class="alert alert-success" role="alert">Suma do zapłaty za zakupione produkty wynosi '+ suma +' złoty, przejdź do <a href="#" class="alert-link">płatności </a>aby uregulować rachunek</div>'
+            
+        }
+            
+        
+    </script>
+        
+            
+            </body>
+
+</html>
